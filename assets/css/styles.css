@@ -10,6 +10,10 @@
   --color-green: #1CAB9B;
 }
 
+.admin-bar {
+  top: 32px;
+}
+
 a {
   text-decoration: none;
 }
@@ -19,6 +23,7 @@ button a {
 }
 
 .navbar {
+  margin-top: -32px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -78,6 +83,9 @@ nav button {
 }
 
 @media(max-width: 955px) {
+  header {
+    margin-top: -32px;
+  }
   #hamburger {
     display: block;
   }
@@ -111,10 +119,10 @@ nav button {
   ul.active {
     left: 0;
   }
-
+  .contact {
+    flex-direction: column;
+  }
 }
-
-
 
 .administration {
   margin-top: 3%;
@@ -131,10 +139,62 @@ nav button {
 .main{
   width: 80%;
   margin-left: 10%;
-  min-height: 100vh;
 }
 
-footer {
-  background-color: var(--color-green);
+/* Mise e nforme du formulaire de contact */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% auto;
+}
+.contact_explication, .contact_formulaire {
+  width: 45%;
  
+}
+
+.contact_formulaire {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.wpcf7 p{
+  font-size: 1.2rem;
+  margin: 10px auto;
+  color: var(--color-red);
+}
+
+.wpcf7 p label {
+  margin-left: 10px;
+}
+
+.wpcf7-submit {
+  background-color: var(--color-green);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+} 
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+}
+footer img{
+  width: 100px;
+}
+
+
+.site_footer_menu,ul li a {
+  font-size: 1.5rem;
+  color: var(--color-green);
+}
+
+.site_footer_menu,ul li a:hover {
+  color: var(--color-blue);
 }

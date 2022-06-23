@@ -2,9 +2,9 @@
   /* Template Name: Modéle page d'accueil*/
 ?>
 <?php get_header() ?>
-<p>Modéle de page : Accueil</p>
 
-<h1><?php the_title() ?></h1>
+<h1><?php the_field('title_home') ?></h1>
+<p><?php the_field('article_home') ?></p>
 
 
 
